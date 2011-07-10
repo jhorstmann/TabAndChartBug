@@ -1,0 +1,7 @@
+Testcase for Primefaces Bug with Chart component inside a TabView.
+
+Run With
+
+mvn install -Pt7 t7:run
+
+Or deploy to any JEE6 compatible server

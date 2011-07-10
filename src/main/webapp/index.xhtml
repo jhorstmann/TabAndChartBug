@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.prime.com.tr/ui">
+    <h:head>
+        <title>Bug with Multiple Charts inside a TabView</title>
+    </h:head>
+    <h:body>
+        <p:tabView>
+            <p:tab title="Chart 1">
+                <p:barChart id="chart1"
+                            value="#{controller.chartModel1}" legendPosition="nw"  
+                            min="0" max="#{5}" style="height:300px"/>  
+            </p:tab>
+            <p:tab title="Chart 2">
+                <p:barChart id="chart2"
+                            value="#{controller.chartModel2}" legendPosition="se"  
+                            min="0" max="#{5}" style="height:300px"/>  
+            </p:tab>
+        </p:tabView>
+    </h:body>
+</html>
